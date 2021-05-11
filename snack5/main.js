@@ -13,21 +13,25 @@
  } */
 
  var numeri = [1,2,3,4,5,6];
-
+console.log(numeri);
 /*  var nuovo = compresi(numeri, 1, 3);
 console.log(nuovo); */
 
-function between(arrray, min, max) {
 
-   if(min < max && max < arrray.lenght){
-      
-      return arrray.slice(min, max)
+//a” più piccolo di “b” e “b” grande al massimo quanto il numero di elementi dell’array
+function between(array, min, max) {
+
+  
+
+   if(min < max && max < array.length){
+      return array.slice(min, max+1)
    } else {
-      return " non va "
+      return false
+     
    }
 
    
 }
+var prova = between(numeri, 1, 3)
 
-var provaprova = between(numeri, 1, 3)
-console.log(provaprova);
+console.log(prova);
